@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza sin gluten | Celicioso</title>
+    <meta
+      name="description"
+      content="Receta de pizza sin gluten del blog Celicioso."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal">
+      Saltar al contenido principal
+    </a>
+
+    <include src="src/components/header.html"></include>
+
+    <main id="contenido-principal" class="pagina-detalle">
+      <div class="detalle-columnas">
+        <div class="detalle-columna detalle-columna--izquierda">
+          <div class="detalle-imagen-principal">
+            <img
+              src="./assets/004.jpg"
+              alt="Pizza sin gluten con salsa de tomate, queso fundido y hojas de albahaca"
+            />
+          </div>
+
+          <div class="detalle-galeria">
+            <button
+              class="galeria-boton"
+              type="button"
+              data-imagen="./assets/009.jpg"
+              data-alt="Preparación de la masa de pizza sin gluten en un recipiente"
+              aria-label="Ampliar imagen de la preparación de la masa"
+            >
+              <img
+                src="./assets/009.jpg"
+                alt="Preparación de la masa de pizza sin gluten en un recipiente"
+              />
+            </button>
+
+            <button
+              class="galeria-boton"
+              type="button"
+              data-imagen="./assets/010.jpg"
+              data-alt="Base de pizza sin gluten extendida antes del horneado"
+              aria-label="Ampliar imagen de la base de pizza antes del horneado"
+            >
+              <img
+                src="./assets/010.jpg"
+                alt="Base de pizza sin gluten extendida antes del horneado"
+              />
+            </button>
+
+            <button
+              class="galeria-boton"
+              type="button"
+              data-imagen="./assets/011.jpg"
+              data-alt="Pizza sin gluten terminada lista para servir"
+              aria-label="Ampliar imagen de la pizza terminada"
+            >
+              <img
+                src="./assets/011.jpg"
+                alt="Pizza sin gluten terminada lista para servir"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="detalle-columna detalle-columna--derecha">
+          <article class="detalle-texto">
+            <h1 id="titulo-receta" class="detalle-titulo">
+              Pizza sin gluten
+            </h1>
+
+            <p class="detalle-parrafo">
+              Esta pizza sin gluten es una alternativa casera muy sabrosa,
+              pensada para disfrutar de una receta clásica adaptada a una
+              alimentación apta para personas celíacas.
+            </p>
+
+            <p class="detalle-parrafo">
+              La combinación de harinas y almidones permite obtener una masa más
+              esponjosa y fácil de trabajar, ideal para preparar una pizza
+              sencilla en casa sin renunciar a una buena textura.
+            </p>
+
+            <p class="detalle-parrafo">
+              Para que la receta sea segura, es fundamental utilizar ingredientes
+              certificados sin gluten y comprobar especialmente el etiquetado de
+              la levadura, la salsa de tomate y cualquier ingrediente añadido en
+              la cobertura.
+            </p>
+
+            <button
+              class="detalle-boton"
+              type="button"
+              aria-expanded="false"
+              aria-controls="ingredientes-det3"
+            >
+              Ver ingredientes
+            </button>
+
+            <div class="detalle-desplegable" id="ingredientes-det3" hidden>
+              <h2 class="detalle-subtitulo">Ingredientes</h2>
+              <ul class="detalle-lista">
+                <li>10 g de levadura en polvo</li>
+                <li>1 cucharadita de azúcar</li>
+                <li>100 ml de agua tibia para espumar la levadura</li>
+                <li>80 g de almidón de maíz</li>
+                <li>80 g de fécula de mandioca</li>
+                <li>80 g de harina de garbanzo</li>
+                <li>1 cucharadita de polvo de hornear</li>
+                <li>1 cucharadita de goma xántica</li>
+                <li>1 cucharadita de psyllium (opcional)</li>
+                <li>sal al gusto</li>
+                <li>150 ml de agua</li>
+                <li>50 ml de aceite</li>
+                <li>salsa de tomate al gusto</li>
+              </ul>
+            </div>
+
+            <button
+              class="detalle-boton"
+              type="button"
+              aria-expanded="false"
+              aria-controls="elaboracion-det3"
+            >
+              Ver elaboración
+            </button>
+
+            <div class="detalle-desplegable" id="elaboracion-det3" hidden>
+              <h2 class="detalle-subtitulo">Elaboración</h2>
+              <ol class="detalle-lista detalle-lista--ordenada">
+                <li>
+                  Disuelve la levadura en polvo en el agua tibia junto con el
+                  azúcar, mezcla bien y deja reposar unos minutos hasta que
+                  empiece a espumar.
+                </li>
+                <li>
+                  En un bol amplio, mezcla el almidón de maíz, la fécula de
+                  mandioca, la harina de garbanzo, el polvo de hornear, la goma
+                  xántica, el psyllium y la sal.
+                </li>
+                <li>
+                  Añade la levadura espumada a la mezcla de harinas e incorpora
+                  también el agua y el aceite.
+                </li>
+                <li>
+                  Mezcla todos los ingredientes hasta obtener una masa homogénea
+                  y deja reposar durante 15 minutos.
+                </li>
+                <li>
+                  Pasado ese tiempo, remueve ligeramente la masa para
+                  desgasificarla.
+                </li>
+                <li>
+                  Coloca la masa en un molde para pizza y extiéndela con
+                  suavidad hasta darle forma.
+                </li>
+                <li>
+                  Añade unas cucharaditas de salsa de tomate y repártelas por la
+                  superficie con ayuda de una cuchara o una brocha de cocina.
+                </li>
+                <li>
+                  Precocina la base en el horno durante 15 minutos a 200 °C.
+                </li>
+                <li>
+                  Saca la pizza, incorpora los ingredientes de la cobertura al
+                  gusto y vuelve a introducirla en el horno.
+                </li>
+                <li>
+                  Hornea durante unos 15 minutos más a 200 °C, hasta que la
+                  superficie esté bien cocinada y el queso, si se utiliza, quede
+                  gratinado.
+                </li>
+              </ol>
+            </div>
+          </article>
+
+          <div class="detalle-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-TCiucDl2ms"
+              title="Vídeo de receta de pizza sin gluten"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="visor-imagen" hidden>
+        <div class="visor-imagen__fondo"></div>
+        <div
+          class="visor-imagen__contenido"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Imagen ampliada"
+        >
+          <button
+            class="visor-imagen__cerrar"
+            type="button"
+            aria-label="Cerrar imagen ampliada"
+          >
+            Cerrar
+          </button>
+          <img class="visor-imagen__img" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <include src="src/components/footer.html"></include>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

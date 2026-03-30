@@ -3,21 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recetas sin gluten</title>
+    <title>Celicioso | Recetas sin gluten</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-  <h1>Recetas sin gluten</h1>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 
-  <nav>
-    <ul>
-      <li><a href="./pages/categoria.html">Categoría</a></li>
-      <li><a href="./pages/det1.html">Detalle 1</a></li>
-      <li><a href="./pages/det2.html">Detalle 2</a></li>
-      <li><a href="./pages/links.html">Links</a></li>
-    </ul>
-  </nav>
+    <include src="src/components/header.html"></include>
 
-  <script type="module" src="./index.js"></script>
-</body>
+    <main id="contenido-principal" class="home-main">
+      <div class="home-intro">
+        <img
+          class="home-intro__image"
+          src="./assets/001.jfif"
+          alt="Cartel con el texto en inglés: I tolerate a lot of things, but not gluten."
+        />
+
+        <section class="home-intro__content">
+          <h1 class="home-intro__title">¿Qué es la celiaquía?</h1>
+
+          <p class="home-intro__text">
+            La celiaquía es una enfermedad. No se trata de una intolerancia al gluten como,
+            por simplificar, se la ha definido en el pasado. Una intolerancia, por
+            definición, no afecta al sistema inmunitario, sino que se desarrolla por otros
+            mecanismos. En la celiaquía sí está involucrado el sistema inmunitario y, por
+            lo tanto, no se puede decir que sea una intolerancia.
+          </p>
+
+          <p class="home-intro__text">
+            Celicioso es un blog dedicado a compartir recetas sin gluten, información útil
+            y contenidos pensados para disfrutar de la comida con seguridad.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <include src="src/components/footer.html"></include>
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
