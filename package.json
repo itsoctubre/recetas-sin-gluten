@@ -10,6 +10,10 @@
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache"
   },
+  "browserslist": [
+    "since 2016",
+    "not dead"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
