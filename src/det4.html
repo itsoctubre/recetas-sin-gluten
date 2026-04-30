@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -27,22 +28,32 @@
       <div class="detalle-columnas">
         <div class="detalle-columna detalle-columna--izquierda">
           <div class="detalle-imagen-principal">
-            <img
-              src="./assets/005.jfif"
-              alt="Porción de carrot cake sin gluten con cobertura cremosa blanca sobre un plato"
-            />
+            <picture>
+              <source
+                media="(max-width: 640px)"
+                srcset="./assets/optimizadas/005-detalle-mobile.webp"
+              />
+              <source
+                media="(max-width: 900px)"
+                srcset="./assets/optimizadas/005-detalle-tablet.webp"
+              />
+              <img
+                src="./assets/optimizadas/005.webp"
+                alt="Porción de carrot cake sin gluten con cobertura cremosa blanca sobre un plato"
+              />
+            </picture>
           </div>
 
           <div class="detalle-galeria">
             <button
               class="galeria-boton"
               type="button"
-              data-imagen="./assets/012.jpg"
+              data-imagen="./assets/optimizadas/012.webp"
               data-alt="Preparación del frosting de la carrot cake en un plato"
               aria-label="Ampliar imagen de la preparación del frosting"
             >
               <img
-                src="./assets/012.jpg"
+                src="./assets/optimizadas/012.webp"
                 alt="Preparación del frosting de la carrot cake en un plato"
               />
             </button>
@@ -50,12 +61,12 @@
             <button
               class="galeria-boton"
               type="button"
-              data-imagen="./assets/013.jpg"
+              data-imagen="./assets/optimizadas/013.webp"
               data-alt="Mezcla de ingredientes de la carrot cake en un bol de cristal"
               aria-label="Ampliar imagen de la mezcla de ingredientes"
             >
               <img
-                src="./assets/013.jpg"
+                src="./assets/optimizadas/013.webp"
                 alt="Mezcla de ingredientes de la carrot cake en un bol de cristal"
               />
             </button>
@@ -63,12 +74,12 @@
             <button
               class="galeria-boton"
               type="button"
-              data-imagen="./assets/014.jpg"
+              data-imagen="./assets/optimizadas/014.webp"
               data-alt="Masa de carrot cake en un molde antes del horneado"
               aria-label="Ampliar imagen de la masa en el molde"
             >
               <img
-                src="./assets/014.jpg"
+                src="./assets/optimizadas/014.webp"
                 alt="Masa de carrot cake en un molde antes del horneado"
               />
             </button>

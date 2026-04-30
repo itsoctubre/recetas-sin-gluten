@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -23,9 +24,27 @@
 
     <main id="contenido-principal" class="pagina-categoria">
       <section class="intro-categoria" aria-labelledby="titulo-categoria">
-        <h1 id="titulo-categoria" class="titulo-categoria">
+        <h1 id="titulo-categoria" class="titulo-categoria titulo-decorado">
+          <svg
+            class="titulo-onda titulo-onda--izquierda"
+            viewBox="0 0 140 24"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 12 C16 2, 30 2, 44 12 S72 22, 86 12 S114 2, 138 12" />
+          </svg>
+
           <span>Recetas sin gluten</span>
           <i data-lucide="wheat" aria-hidden="true"></i>
+
+          <svg
+            class="titulo-onda titulo-onda--derecha"
+            viewBox="0 0 140 24"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 12 C16 2, 30 2, 44 12 S72 22, 86 12 S114 2, 138 12" />
+          </svg>
         </h1>
         <p class="texto-categoria">
           En esta sección encontrarás una pequeña selección de recetas sin gluten
@@ -38,7 +57,12 @@
         <article class="receta">
           <img
             class="receta-imagen"
-            src="./assets/003.jfif"
+            src="./assets/optimizadas/003-340.webp"
+            srcset="
+              ./assets/optimizadas/003-340.webp 340w,
+              ./assets/optimizadas/003-680.webp 680w
+            "
+            sizes="(max-width: 640px) 100vw, 170px"
             alt="Galletas de avena y plátano sobre un plato, acompañadas de rodajas de plátano"
           />
 
@@ -74,7 +98,12 @@
         <article class="receta">
           <img
             class="receta-imagen"
-            src="./assets/004.jpg"
+            src="./assets/optimizadas/004-340.webp"
+            srcset="
+              ./assets/optimizadas/004-340.webp 340w,
+              ./assets/optimizadas/004-680.webp 680w
+            "
+            sizes="(max-width: 640px) 100vw, 170px"
             alt="Pizza sin gluten con tomate, mozzarella y hojas de albahaca"
           />
 
@@ -110,7 +139,12 @@
         <article class="receta">
           <img
             class="receta-imagen"
-            src="./assets/005.jfif"
+            src="./assets/optimizadas/005-340.webp"
+            srcset="
+              ./assets/optimizadas/005-340.webp 340w,
+              ./assets/optimizadas/005-680.webp 680w
+            "
+            sizes="(max-width: 640px) 100vw, 170px"
             alt="Porción de carrot cake sin gluten con cobertura blanca sobre un plato"
           />
 

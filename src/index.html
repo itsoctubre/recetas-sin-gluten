@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -21,12 +22,50 @@
       <div class="home-intro">
         <img
           class="home-intro__image"
-          src="./assets/001.jfif"
+          src="./assets/optimizadas/001-640.webp"
+          srcset="
+            ./assets/optimizadas/001-320.webp 320w,
+            ./assets/optimizadas/001-640.webp 640w,
+            ./assets/optimizadas/001-840.webp 840w
+          "
+          sizes="(max-width: 700px) 100vw, 420px"
           alt="Cartel humorístico sobre el gluten con el mensaje en inglés 'I tolerate a lot of things, but not gluten'."
         />
 
         <section class="home-intro__content">
           <h1 class="home-intro__title">¿Qué es la celiaquía?</h1>
+
+          <svg
+            class="home-badge"
+            viewBox="0 0 180 180"
+            role="img"
+            aria-labelledby="home-badge-title home-badge-desc"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title id="home-badge-title">Sello gráfico sin gluten</title>
+            <desc id="home-badge-desc">
+              Recurso gráfico símbolo sin gluten.
+            </desc>
+
+            <circle class="home-badge__circle" cx="90" cy="90" r="76" />
+            <circle class="home-badge__inner" cx="90" cy="90" r="58" />
+
+            <g class="home-badge__wheat" aria-hidden="true">
+              <path d="M90 45 C86 62 86 82 90 122" />
+              <path d="M89 62 C72 55 65 45 62 34" />
+              <path d="M91 62 C108 55 115 45 118 34" />
+              <path d="M88 78 C72 74 63 64 58 52" />
+              <path d="M92 78 C108 74 117 64 122 52" />
+              <path d="M88 95 C73 91 64 82 58 70" />
+              <path d="M92 95 C107 91 116 82 122 70" />
+            </g>
+
+            <line class="home-badge__slash" x1="45" y1="135" x2="135" y2="45" />
+
+            <text class="home-badge__text" x="90" y="150" text-anchor="middle">
+              SIN GLUTEN
+            </text>
+          </svg>
 
           <p class="home-intro__text">
             La celiaquía es una enfermedad. No se trata de una intolerancia al gluten como,
@@ -40,6 +79,27 @@
             Celicioso es un blog dedicado a compartir recetas sin gluten, información útil
             y contenidos pensados para disfrutar de la comida con seguridad.
           </p>
+
+          <div class="home-stickers" aria-label="Pegatinas decorativas sobre alimentación sin gluten">
+            <img
+              class="home-stickers__image"
+              src="./assets/optimizadas/015.webp"
+              alt="Pegatina con una tostada sonriente y el texto en inglés 'I can tolerate a lot but not gluten'"
+            />
+
+            <img
+              class="home-stickers__image"
+              src="./assets/optimizadas/016.webp"
+              alt="Pegatina de un pato con pan y el texto en inglés 'Is this gluten free?'"
+            />
+
+            <img
+              class="home-stickers__image"
+              src="./assets/optimizadas/017.webp"
+              alt="Pegatina con el texto en inglés 'In my gluten free era'"
+            />
+          </div>
+
         </section>
       </div>
     </main>

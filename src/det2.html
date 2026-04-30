@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -27,22 +28,32 @@
       <div class="detalle-columnas">
         <div class="detalle-columna detalle-columna--izquierda">
           <div class="detalle-imagen-principal">
-            <img
-              src="./assets/003.jfif"
-              alt="Galletas de avena y plátano sin gluten sobre un plato, acompañadas de rodajas de plátano"
-            />
+            <picture>
+              <source
+                media="(max-width: 640px)"
+                srcset="./assets/optimizadas/003-detalle-mobile.webp"
+              />
+              <source
+                media="(max-width: 900px)"
+                srcset="./assets/optimizadas/003-detalle-tablet.webp"
+              />
+              <img
+                src="./assets/optimizadas/003.webp"
+                alt="Galletas de avena y plátano sin gluten sobre un plato, acompañadas de rodajas de plátano"
+              />
+            </picture>
           </div>
 
           <div class="detalle-galeria">
             <button
               class="galeria-boton"
               type="button"
-              data-imagen="./assets/006.jpg"
+              data-imagen="./assets/optimizadas/006.webp"
               data-alt="Preparación de la masa de las galletas de avena y plátano en un bol"
               aria-label="Ampliar imagen de la preparación de la masa"
             >
               <img
-                src="./assets/006.jpg"
+                src="./assets/optimizadas/006.webp"
                 alt="Preparación de la masa de las galletas de avena y plátano en un bol"
               />
             </button>
@@ -50,12 +61,12 @@
             <button
               class="galeria-boton"
               type="button"
-              data-imagen="./assets/007.jpg"
+              data-imagen="./assets/optimizadas/007.webp"
               data-alt="Bandeja con galletas de avena y plátano dentro del horno"
               aria-label="Ampliar imagen de la bandeja con galletas en el horno"
             >
               <img
-                src="./assets/007.jpg"
+                src="./assets/optimizadas/007.webp"
                 alt="Bandeja con galletas de avena y plátano dentro del horno"
               />
             </button>
@@ -63,12 +74,12 @@
             <button
               class="galeria-boton"
               type="button"
-              data-imagen="./assets/008.jpg"
+              data-imagen="./assets/optimizadas/008.webp"
               data-alt="Galletas de avena y plátano terminadas sobre una bandeja"
               aria-label="Ampliar imagen de las galletas terminadas"
             >
               <img
-                src="./assets/008.jpg"
+                src="./assets/optimizadas/008.webp"
                 alt="Galletas de avena y plátano terminadas sobre una bandeja"
               />
             </button>

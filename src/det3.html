@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -27,22 +28,32 @@
       <div class="detalle-columnas">
         <div class="detalle-columna detalle-columna--izquierda">
           <div class="detalle-imagen-principal">
-            <img
-              src="./assets/004.jpg"
-              alt="Pizza sin gluten con salsa de tomate, queso fundido y hojas de albahaca"
-            />
+            <picture>
+              <source
+                media="(max-width: 640px)"
+                srcset="./assets/optimizadas/004-detalle-mobile.webp"
+              />
+              <source
+                media="(max-width: 900px)"
+                srcset="./assets/optimizadas/004-detalle-tablet.webp"
+              />
+              <img
+                src="./assets/optimizadas/004.webp"
+                alt="Pizza sin gluten con salsa de tomate, queso fundido y hojas de albahaca"
+              />
+            </picture>
           </div>
 
           <div class="detalle-galeria">
             <button
               class="galeria-boton"
               type="button"
-              data-imagen="./assets/009.jpg"
+              data-imagen="./assets/optimizadas/009.webp"
               data-alt="Preparación de la masa de pizza sin gluten en un recipiente"
               aria-label="Ampliar imagen de la preparación de la masa"
             >
               <img
-                src="./assets/009.jpg"
+                src="./assets/optimizadas/009.webp"
                 alt="Preparación de la masa de pizza sin gluten en un recipiente"
               />
             </button>
@@ -50,12 +61,12 @@
             <button
               class="galeria-boton"
               type="button"
-              data-imagen="./assets/010.jpg"
+              data-imagen="./assets/optimizadas/010.webp"
               data-alt="Base de pizza sin gluten extendida antes del horneado"
               aria-label="Ampliar imagen de la base de pizza antes del horneado"
             >
               <img
-                src="./assets/010.jpg"
+                src="./assets/optimizadas/010.webp"
                 alt="Base de pizza sin gluten extendida antes del horneado"
               />
             </button>
@@ -63,12 +74,12 @@
             <button
               class="galeria-boton"
               type="button"
-              data-imagen="./assets/011.jpg"
+              data-imagen="./assets/optimizadas/011.webp"
               data-alt="Pizza sin gluten terminada lista para servir"
               aria-label="Ampliar imagen de la pizza terminada"
             >
               <img
-                src="./assets/011.jpg"
+                src="./assets/optimizadas/011.webp"
                 alt="Pizza sin gluten terminada lista para servir"
               />
             </button>
